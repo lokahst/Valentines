@@ -1,0 +1,173 @@
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                      VALENTINES PLUGIN CONFIG                      ║
+# ║                       Updated: July 16, 2026                       ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                                CHAT                                ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+# Plugin prefix
+Prefix: "&d&lValentines &7»&r "
+
+# Allows changing "words" with "symbol"
+symbol-change: true
+symbol-color: "&c"
+symbol: "♥"
+words:
+  - "<3"
+  - "valentines"
+  - "heart"
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                      PARTICLE EFFECT SETTINGS                      ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+effect:
+  enabled: true
+
+  # Number of particles spawned per effect tick
+  particle-density: 2
+
+  # How often effects update in ticks (20 ticks = 1 second)
+  update-rate: 3
+
+  # Maximum height particles can reach above player (in blocks)
+  max-height: 2.5
+
+  # Starting height of particles above player's feet (in blocks)
+  start-height: 0.1
+
+  # Horizontal radius of particle effects (in blocks)
+  radius: 1.0
+
+# Enable/disable specific action particle effects
+kiss-effect: true
+hug-effect: true
+marriage-effect: true
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                           WORLD SETTINGS                           ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+# List of worlds where the plugin features are active
+enabled-worlds:
+  - "world"
+  - "world_nether"
+  - "world_the_end"
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                          COOLDOWN SETTINGS                         ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+# Cooldowns for each action (in seconds)
+cooldowns:
+  hug: 45
+  kiss: 60
+  like: 240
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                      MARRIAGE SYSTEM SETTINGS                      ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+marriage:
+  # How long a marriage proposal stays valid (in seconds)
+  proposal-timeout: 45
+
+  # Cooldown between sending marriage proposals (in seconds)
+  proposal-cooldown: 30
+
+  # If false, proposals are instantly accepted
+  require-confirmation: true
+
+  # Broadcast marriage announcements to the entire server
+  announcement: true
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                    ANNIVERSARY SYSTEM SETTINGS                     ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+anniversary:
+  enabled: true
+
+  # Who sees announcement: "global" (everyone), "couple" (only the couple), "world" (specific worlds)
+  announcement-type: "global"
+  announcement-worlds:
+    - "world"
+  check-interval: 300
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                        LEADERBOARD SETTINGS                        ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+leaderboard:
+  # Enable the love leaderboard showing top players by hugs/kisses/likes
+  enabled: true
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                           DATA MANAGEMENT                          ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+# How often to automatically save all player data to disk (in minutes)
+auto-save: 30
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                         ACHIEVEMENT SYSTEM                         ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+achievements:
+  enabled: true
+
+  # Broadcast achievement unlocks to all players on the server
+  broadcast: true
+
+  # Uses Minecraft's UI_TOAST_CHALLENGE_COMPLETE sound when unlocked
+  sound-enabled: true
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                       PLACEHOLDERAPI SETTINGS                      ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+placeholderapi:
+  # Registers %valentines_*% placeholders when PlaceholderAPI is installed
+  enabled: true
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                      VERSION CHECKER SETTINGS                      ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+config-version: "2.0.1"
+version-checker:
+  enabled: true
+  check-on-startup: true
+  minimum-interval-seconds: 600
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                          FRIENDS SETTINGS                          ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+friends:
+  # Messaging when your friends join/leave the server
+  join-leave-notifications: true
+
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║                            GUI SETTINGS                            ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+gui:
+  background:
+    enabled: true
+    material: "PINK_STAINED_GLASS_PANE"
+    name: "&7"
+  items:
+    main:
+      stats: "BOOK"
+      marriages: "CAKE"
+      marriage: "SUNFLOWER"
+      settings: "REDSTONE"
+      leaderboard: "GOLDEN_APPLE"
+      achievements: "ROSE_BUSH"
+      player-search: "COMPASS"
+      close: "BARRIER"
+    stats:
+      mood-display: "TOTEM_OF_UNDYING"

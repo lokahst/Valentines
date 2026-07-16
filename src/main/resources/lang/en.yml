@@ -1,0 +1,328 @@
+plugin:
+  reload: "&aValentines plugin has been reloaded successfully!"
+
+general:
+  no-permission: "&cYou don't have permission to use this command!"
+  player-offline: "&cThat player is not online right now!"
+  cooldown: "&cYou can use &d{command}&c again in &d{time}&c seconds!"
+
+hug:
+  sent: "&fYou gave &d{player} &fa hug!"
+  received: "&d{player} &fgave you a hug!"
+
+kiss:
+  sent: "&fYou kissed &d{player}&f!"
+  received: "&d{player} &fkissed you!"
+
+like:
+  already-liked: "&cYou've already liked &d{player}&c!"
+  sent: "&fYou liked &d{player}&f!"
+  received: "&d{player} &flikes you!"
+
+marry:
+  self: "&cYou can't marry yourself!"
+  proposal-sent: "&fMarriage proposal sent to &d{player}&f! Good luck!"
+  proposal-received: "&d{player} &fwants to marry you! \n&fOpen &d/vgui &fand use the &eMarriage &fmenu to accept or deny."
+  already-married: "&cYou're already married to &d{partner}&c!"
+  target-already-married: "&d{player}&c is already taken!"
+  no-pending-proposals: "&cYou have no pending marriage proposals!"
+  proposer-offline: "&cThe person who proposed is no longer online!"
+  proposal-cooldown: "&cYou can propose again in &d{time}&c seconds!"
+  accept-sender: "&d{player} &aaccepted your proposal! You're now married!"
+  accept-receiver: "&aYou married &d{player}&a!"
+  decline-sender: "&d{player} &cdeclined your proposal."
+  decline-receiver: "&cYou declined &d{player}'s &cproposal."
+  announcement: "&d{player1} &fand &d{player2} &fjust got married! &d Congratulations!"
+  divorce-announcement: "&c{player1} &fand &c{player2} &fhave divorced."
+  chat-propose-prompt: "&fType the name of the player you want to propose to."
+  chat-propose-not-found: "&cPlayer &d{player} &cis not online!"
+  requests-disabled: "&d{player} &cis not accepting marriage requests."
+  active-proposal: "&cYou or that player already have an active marriage proposal."
+
+anniversary:
+  global-announcement: "&d&5ANNIVERSARY CELEBRATION! &d{player1} &fand &d{player2} &fcelebrate &d{years} &fyear(s) of marriage!"
+  couple-message: "&d&5Happy Anniversary! &fYou and &d{partner} &fhave been married for &d{years} &fyear(s)!"
+  world-announcement: "&d{player1} &fand &d{player2} &fcelebrate their &d{years} &fyear anniversary!"
+
+mood:
+  updated: "&fYour mood has been updated to: &d{mood}"
+  unknown: "&7Unknown"
+  very-good: "&aVery Good"
+  good: "&eGood"
+  neutral: "&fNeutral"
+  bad: "&cBad"
+  very-bad: "&4Very Bad"
+
+player-search:
+  prompt: "&fPlease type the name of the player you want to search for:"
+  not-found: "&cPlayer '&d{player}&c' not found or is not online!"
+  searching: "&fSearching for player: &d{player}&f..."
+
+gui:
+  main-menu-title: "&d❤ Valentines Menu ❤"
+  stats-menu-title: "&d❤ &5Player Stats &d❤"
+  leaderboard-title: "&d❤ &5Love Leaderboard &d❤"
+  marriages-title: "&d❤ &5Married Couples &d❤"
+  marriage-menu-title: "&d❤ &5Marriage &d❤"
+  marriage-proposals-menu-title: "&d❤ &5Marriage Proposals &d❤"
+  settings-title: "&d❤ &5Effect Settings &d❤"
+  mood-title: "&d❤ &5Mood Settings &d❤"
+  achievements-menu-title: "&d❤ &5Achievements &d❤"
+  player-profile-title: "&d❤ &5{player}'s Profile &d❤"
+
+  stats-button-title: "&dYour Stats"
+  stats-button-lore:
+    - "&fView your statistics"
+    - "&7See what and from who you received"
+  leaderboard-button-title: "&dLeaderboard"
+  leaderboard-button-lore:
+    - "&fSee the most loved players"
+    - "&7Compete for the top spot!"
+  marriages-button-title: "&dMarried Couples"
+  marriages-button-lore:
+    - "&fView all marriages on the server"
+    - "&7See who is really married!"
+  marriage-button-title: "&eMarriage"
+  marriage-button-lore:
+    - "&fManage proposals and requests"
+    - "&7Find someone to marry!"
+  settings-button-title: "&dSettings"
+  settings-button-lore:
+    - "&fCustomize your particle effects"
+    - "&7Just don't forget to allow animations!"
+  achievements-button-title: "&dAchievements"
+  achievements-button-lore:
+    - "&fView your achievements"
+    - "&7Track your progress!"
+  player-search-button-title: "&dPlayer Search"
+  player-search-button-lore:
+    - "&fSearch for other players"
+    - "&7Find and interact with players!"
+  enabled-state: "&aEnabled"
+  disabled-state: "&cDisabled"
+  marriage-find-title: "&dFind Someone to Marry"
+  marriage-find-lore:
+    - "&fClick and type a player name in chat"
+    - "&7Sends a proposal if neither of you have one active"
+  marriage-requests-toggle-title: "&dMarriage Requests"
+  marriage-requests-toggle-lore:
+    - "&fCurrent state: {state}"
+    - "&7Click to toggle marriage requests"
+  marriage-proposals-title: "&dActive Proposals"
+  marriage-proposals-lore:
+    - "&fPending proposals: &d{count}"
+    - "&7Click to accept or deny incoming proposals"
+  no-marriage-proposals-title: "&cNo Active Proposals"
+  no-marriage-proposals-lore:
+    - "&7You do not have any pending marriage proposals."
+  marriage-accept-title: "&aAccept {player}"
+  marriage-accept-lore:
+    - "&fAccept &d{player}&f's marriage proposal"
+  marriage-deny-title: "&cDeny {player}"
+  marriage-deny-lore:
+    - "&fDecline &d{player}&f's marriage proposal"
+
+  hugs-title: "&dHugs Received"
+  hugs-lore:
+    - "&fYou've received &d{count} &f hugs"
+    - "&7Do you actually like it?"
+  kisses-title: "&dKisses Received"
+  kisses-lore:
+    - "&fYou've received &d{count} &fsweet kisses"
+    - "&7Maybe you should do your first move?"
+  likes-title: "&dLikes Received"
+  likes-lore:
+    - "&fYou've received &d{count} &flikes"
+    - "&7People really appreciate you!"
+  marriage-title: "&dMarriage Status"
+  marriage-lore:
+    - "&fYou are married to &d{partner}"
+    - "&fFor &d{days} &fdays"
+    - "&7True love never dies!"
+  single-title: "&dRelationship Status"
+  single-lore:
+    - "&fYou are currently single"
+    - "&7Don't worry, somebody is out there!"
+  mood-display-title: "&dYour Mood"
+  mood-display-lore:
+    - "&fCurrent mood: &d{mood}"
+    - "&7Click to change your mood"
+
+  leaderboard-entry-title: "&a{rank} &d{player}"
+
+  marriage-couple-title: "&d{player1} &f♥ &d{player2}"
+  marriage-couple-lore:
+    - "&fMarried since: &d{date}"
+    - "&fDays together: &d{days}"
+    - "&7A beautiful love story!"
+
+  hug-button-title: "&dHug {player}"
+  hug-button-lore:
+    - "&fGive them a hug"
+    - "&7Feels good?"
+  kiss-button-title: "&dKiss {player}"
+  kiss-button-lore:
+    - "&fSend them a kiss"
+    - "&7That's good move!"
+  like-button-title: "&dLike {player}"
+  like-button-lore:
+    - "&fShow your appreciation"
+    - "&7Let them know you care!"
+  marry-button-title: "&dMarry {player}"
+  marry-button-lore:
+    - "&fPropose marriage"
+    - "&7Just hope for the best!"
+
+  mood-very-good-title: "&aVery Good"
+  mood-very-good-lore:
+    - "&fSet your mood to Very Good"
+    - "&7You're feeling amazing!"
+  mood-good-title: "&eGood"
+  mood-good-lore:
+    - "&fSet your mood to Good"
+    - "&7You're doing well!"
+  mood-neutral-title: "&fNeutral"
+  mood-neutral-lore:
+    - "&fSet your mood to Neutral"
+    - "&7You're feeling okay!"
+  mood-bad-title: "&cBad"
+  mood-bad-lore:
+    - "&fSet your mood to Bad"
+    - "&7What happened?"
+  mood-very-bad-title: "&4Very Bad"
+  mood-very-bad-lore:
+    - "&fSet your mood to Very Bad"
+    - "&7Why?"
+
+  effect-spiral: "&dSpiral Effect"
+  effect-heart: "&dHeart Effect"
+  effect-rainbow: "&dRainbow Effect"
+  effect-selected: "&aSelected"
+  effect-disabled: "&cDisabled"
+
+  age-title: "&dProfile Age"
+  age-lore:
+    - "&fYour age: &d{age}"
+    - "&7Click to edit (13-99)"
+  age-editor-title: "&d❤ &5Age Editor &d❤"
+  age-decrease-title: "&c-1 Age"
+  age-current-title: "&dCurrent Age: {age}"
+  age-increase-title: "&a+1 Age"
+  age-save-title: "&aSave Age"
+  age-unset-title: "&cRemove Age"
+  my-friends-title: "&dMy Friends"
+  my-friends-lore:
+    - "&fFriends count: &d{count}"
+    - "&7Click to view"
+  friend-requests-toggle-title: "&dFriend Requests"
+  friend-requests-toggle-lore:
+    - "&fCurrent: &d{state}"
+    - "&7Click to toggle"
+  friend-chat-add-title: "&aAdd Friend (Chat)"
+  friend-chat-add-lore:
+    - "&fClick and type a player's name in chat"
+    - "&7A friend request will be sent automatically"
+  profile-friends-title: "&dFriends List"
+  profile-friends-lore:
+    - "&fThis player has &d{count} &ffriends"
+    - "&7Click to view"
+  friends-menu-title: "&d❤ &5{player}'s Friends &d❤"
+  friend-entry-title: "&d{friend}"
+  friend-entry-lore:
+    - "&fFriends since: &d{since}"
+  friend-add-title: "&aAdd Friend"
+  friend-add-lore:
+    - "&fSend a friend request to &d{player}"
+  friend-accept-title: "&aAccept Friend Request"
+  friend-accept-lore:
+    - "&fAccept &d{player}'s &ffriend request"
+  friend-deny-title: "&cDeny Request"
+  friend-deny-lore:
+    - "&fDecline &d{player}'s &ffriend request"
+  friend-remove-title: "&cRemove Friend"
+  friend-remove-lore:
+    - "&fRemove &d{player} &ffrom your friends"
+
+  back-button: "&c⬅ Back"
+
+achievements:
+  unlocked: "&a&Achievement Unlocked! &d{achievement}"
+  broadcast: "&d{player} &fhas unlocked the achievement: &d{achievement}&f!"
+
+  first_kiss_received:
+    name: "First Kiss Received"
+    description: "Received your first kiss from another player"
+  first_hug_received:
+    name: "First Hug Received"
+    description: "Received your first hug from another player"
+  first_like_received:
+    name: "First Like Received"
+    description: "Received your first like from another player"
+  first_kiss_given:
+    name: "First Kiss Given"
+    description: "Gave your first kiss to another player"
+  first_hug_given:
+    name: "First Hug Given"
+    description: "Gave your first hug to another player"
+  first_like_given:
+    name: "First Like Given"
+    description: "Gave your first like to another player"
+  reach_10_kisses:
+    name: "Kissable"
+    description: "Received 10 kisses"
+  reach_10_hugs:
+    name: "Huggable"
+    description: "Received 10 hugs"
+  reach_10_likes:
+    name: "Likeable"
+    description: "Received 10 likes"
+  marriage:
+    name: "Just Married"
+    description: "Got married to another player"
+  divorce:
+    name: "It's Complicated"
+    description: "Got divorced from your partner"
+  married_30_days:
+    name: "One Month Together"
+    description: "Been married for 30 days"
+  married_365_days:
+    name: "One Year Anniversary"
+    description: "Been married for 365 days"
+  married_2_years:
+    name: "Two Years Strong"
+    description: "Been married for 2 years"
+  first_mood_set:
+    name: "Mood Setter"
+    description: "Set your mood for the first time"
+  make_a_friend:
+    name: "New Bestie"
+    description: "Become friends with another player"
+  friends_for_3_months:
+    name: "3-Month Bond"
+    description: "Stay friends for at least 3 months"
+
+friends:
+  already-friends: "&cYou are already friends with this player."
+  requests-disabled: "&cThat player has disabled friend requests."
+  max-reached: "&cMaximum friends reached (50)."
+  request-already-sent: "&eYou already sent a friend request to this player."
+  request-sent: "&aFriend request sent to &d{player}&a."
+  request-received: "&d{player} &fsent you a friend request. Open their profile to accept/deny."
+  request-accepted: "&aYou are now friends with &d{player}&a."
+  accept-notify: "&d{player} &aaccepted your friend request."
+  request-denied: "&cFriend request denied."
+  request-denied-notify: "&d{player} &cdeclined your friend request."
+  no-pending: "&cYou don't have a pending request from this player."
+  not-friends: "&cYou are not friends with this player."
+  removed: "&eYou removed &d{player} &efrom your friends."
+  toggle-enabled: "&aYou now accept friend requests."
+  toggle-disabled: "&cYou no longer accept friend requests."
+  join-notify: "&fYour friend &d{friend} &fjoined the server."
+  leave-notify: "&fYour friend &d{friend} &fleft the server."
+  chat-add-prompt: "&fType the player's name in chat to send a friend request."
+  chat-add-not-found: "&cPlayer '&d{player}&c' not found or is not online."
+  chat-add-self: "&cYou can't send a friend request to yourself."
+
+age:
+  updated: "&aYour age is now set to &d{age}&a."
+  removed: "&eYour age was removed from your profile."

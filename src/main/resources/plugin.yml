@@ -1,0 +1,49 @@
+name: Valentines
+version: '2.0.1'
+main: lokahst.valentines.Valentines
+api-version: '1.20'
+prefix: 'Primly'
+load: STARTUP
+authors: [Wejkey, lokahst]
+description: Valentines - Love but in Minecraft
+softdepend: [PlaceholderAPI]
+commands:
+  valentines:
+    description: Main valentines command
+    aliases: [val, vgui]
+    permission: valentines.use
+  vreload:
+    description: Reload Valentines plugin
+    permission: valentines.reload
+permissions:
+  valentines.use:
+    description: Allows use of default commands
+    default: true
+  valentines.effect:
+    description: Allows players to have effects around them
+    default: true
+  valentines.marry:
+    description: Allows to marry someone
+    default: true
+  valentines.divorce:
+    description: Allows divorce with partner
+    default: true
+  valentines.admin:
+    description: Allows access to administrative commands
+    default: op
+  valentines.reload:
+    description: Allows reloading the plugin
+    default: op
+
+  valentines.friends.use:
+    description: Allows using friend GUI features
+    default: true
+  valentines.friends.add:
+    description: Allows sending friend requests
+    default: true
+  valentines.friends.*:
+    description: Grants all friend permissions
+    default: op
+    children:
+      valentines.friends.use: true
+      valentines.friends.add: true
