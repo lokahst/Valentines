@@ -1,10 +1,10 @@
 name: Valentines
-version: '2.0.1'
+version: '2.0.2'
 main: lokahst.valentines.Valentines
 api-version: '1.20'
-prefix: 'Primly'
 load: STARTUP
-authors: [Wejkey, lokahst]
+website: https://lokahst.dev
+authors: [lokahst]
 description: Valentines - Love but in Minecraft
 softdepend: [PlaceholderAPI]
 commands:
